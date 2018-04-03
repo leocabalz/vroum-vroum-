@@ -1,0 +1,24 @@
+
+fonction select a pixel (x;y;color)
+	look around (x:y:color) 
+	if rgb pixel = rgb pixel around 
+		select pixel around 
+		repeter la fonction 
+	either return 
+
+
+
+x = pos.x ()
+y = pos.y () 
+color= pos.color() ?? 
+pixel1( x ; y ; color1 )
+pixel2((x+1)=x2 ; y=y2 ; color2) 
+	color1 = color2 ? oui = select et x=x2 y=y2 ; non = return 
+pixel2((x-1)=x2 ; y=y2 ; color2) 
+	color1 = color2 ? oui = select et x=x2 y=y2 ; non = return 
+pixel2 (x=x2 ; (y+1)=y2 ; color2) 
+	color1 = color2 ? oui = select et x=x2 y=y2 ; non = return 
+pixel2 (x=x2 ; (y-1)=y2 ; color2)
+	color1 = color2 ? oui = select et x=x2 y=y2 ; non = return 
+
+
